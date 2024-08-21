@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, #000046, #515ff6);
+}
+
+.row{
+    width: 100%;
+    height: 100vh;
+}
+
+.tool-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: linear-gradient(to right, #5757f3, #c80049);
+}
+
+button{
+    margin: 5px;
+    width: 80px;
+    height: 35px;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    transition: transform .4s;
+}
+
+.btnSave{
+    background-color: #d41010;
+}
+
+.btnClear{
+    background-color: #1abc9d;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fill-checkbox{
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.fill-checkbox:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.color-picker{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    transition: transform .4s;
+
+}
+
+.color-picker:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: transform .4s;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.drawing-board{
+    width: 100%;
+    height: 85vh;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.canvas{
+
+    width: 100%;
+    height: 100vh;
+    border: 10px;
+    background: #ffffff;
+}

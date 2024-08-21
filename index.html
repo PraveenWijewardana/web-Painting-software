@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Web Canvast</title>
+    <link rel="icon" href="icons/paint.png"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body class="body" onload="onLoad();">
+    <div class="container">
+        <div class="row">
+            <section class="tool-box">
+                <button class="btnSave" onclick="save();">Save</button>
+                <button class="btnClear" onclick="clearCanvas();">Clear</button>
+
+                <img class="icons" src="icons/circle.svg" onclick="changeTool('circle');"/>
+                <img class="icons" src="icons/rectangle.svg" onclick="changeTool('rectangle');"/>
+                <img class="icons" src="icons/triangle.svg" onclick="changeTool('triangle');"/>
+
+                <input type="checkbox" class="fill-checkbox" id="fill-checkbox"/>
+                <input type="color" value="rgb(0,0,0)" class="color-picker" id="color-picker" onchange="changeColor();"/>
+
+                <img class="icons" src="icons/brush.svg" onclick="changeTool('brush');"/>
+                <img class="icons" src="icons/eraser.svg" onclick="changeTool('eraser');"/>
+
+                <input type="range" min="1" max="30" value="5" class="size-range" id="size-range" onchange="changeBrushSize();"/>
+
+               
+            </section>
+
+            <section class="drawing-board">
+                <canvas class="canvas" id="canvas" onmousedown="canvasMouseDown(event);" onmousemove="canvasOnmouseMove(event);" onmouseup="canvasMouseUp();"></canvas>
+
+            </section>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
