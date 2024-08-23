@@ -53,7 +53,7 @@ function painting(e){
        
 
         
-        if(selectedDrawingTool == "brush"){
+        if(selectedDrawingTool == "brush"){ //brush
             context.lineTo(e.offsetX, e.offsetY);
             context.stroke();
         }else if(selectedDrawingTool == "rectangle"){
