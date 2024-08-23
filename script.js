@@ -1,4 +1,3 @@
-fthrhu
 
 
 var canvas = document.getElementById("canvas");
