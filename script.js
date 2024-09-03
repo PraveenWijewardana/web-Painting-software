@@ -123,7 +123,7 @@ function changeTool(tool){
     selectedDrawingTool = tool;
 }
 
-var brushSize = 5;
+var brushSize = 5; //normal brush size
 
 
 
