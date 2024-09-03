@@ -108,7 +108,7 @@ function drawRectangle(e){
 var selectedColor = "black";
 
 
-
+//color chaainger
 function changeColor(){
     
     var colorpicker = document.getElementById("color-picker");
