@@ -52,7 +52,7 @@ function painting(e){
 
        
 
-        
+        //brush
         if(selectedDrawingTool == "brush"){ 
             context.lineTo(e.offsetX, e.offsetY);
             context.stroke();
